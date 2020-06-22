@@ -1,349 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
     <title>New page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- build:css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <!-- endbuild -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0">
-                <div class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center">
-                    <div class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1">
-                        <button type="button" class="btn btn-dark col-6 ml-4 ">Logo</button>
-                        <button type="button" class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block " data-sidebar="#sidebar-left">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                        <button class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col " type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                    </div>
+      <div class="row">
+        <nav
+          class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0"
+        >
+          <div
+            class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center"
+          >
+            <div
+              class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1"
+            >
+              <button type="button" class="btn btn-dark col-6 ml-4">
+                Logo
+              </button>
+              <button
+                type="button"
+                class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block"
+                data-sidebar="#sidebar-left"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+              <button
+                class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+            </div>
+          </div>
 
+          <div
+            class="collapse navbar-collapse py-2 col-auto col-lg-10 col-xl-10"
+            id="navbarsExampleDefault"
+          >
+            <ul class="navbar-nav mr-auto ml-3">
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href="/control-centre/index.html">
+                  <span class="fa fa-link"></span> Control Center</a
+                >
+              </li>
+
+              <li class="nav-item dropdown navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/tag-management/index.html"
+                  id="svr"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-paperclip"></span> Tag Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="svr"
+                >
+                  <a class="dropdown-item" href="/tag-management/index.html"
+                    >index</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/tag-management/input-tag-name.html"
+                    >page Not Found</a
+                  >
                 </div>
+              </li>
 
-                <div class="collapse navbar-collapse py-2 col-auto col-lg-10 col-xl-10 " id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto ml-3 ">
-                        <li class="nav-item navItem__link ">
-                            <a class="nav-link " href="/control-centre/index.html">
-                                <span class="fa fa-link"></span> Control Center</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/tag-management/index.html" id="svr" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-paperclip"></span> Tag Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="svr">
-                                <a class="dropdown-item" href="/tag-management/index.html">index</a>
-                                <a class="dropdown-item" href="/tag-management/input-tag-name.html">page Not Found</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/site-management/index.html" id="3ed" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-sitemap"></span> Site Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="3ed">
-                                <a class="dropdown-item" href="/site-management/server.html">Server</a>
-                                <a class="dropdown-item" href="/site-management/server-expired.html">Server (status expired)</a>
-                                <a class="dropdown-item" href="/site-management/group.html">Group</a>
-                            </div>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/domain-management/index.html" id="2rg" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-globe"></span> Domain Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="2rg">
-                                <a class="dropdown-item" href="/domain-management/index.html">index</a>
-                                <a class="dropdown-item" href="/domain-management/notfound.html">index (status notfound)</a>
-                            </div>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/route-management/index.html" id="0ij" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-random"></span> Route Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="0ij">
-                                <a class="dropdown-item" href="/route-management/index.html">index</a>
-                                <a class="dropdown-item" href="/route-management/notfound.html">index (status notfound)</a>
-                            </div>
-
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href="/disaster-tolerance-record/index.html">
-                                <span class="fa fa-file-text-o"></span> Disaster Tolerance Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href="/qps-record/index.html">
-                                <span class="fa fa-bar-chart-o"></span> QPS Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/account-management/index.html" id="0ij" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-user-o"></span> Account Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="0ij">
-                                <a class="dropdown-item" href="/account-management/profile.html">Profile</a>
-                                <a class="dropdown-item" href="/account-management/login-record.html">Login Record</a>
-                                <a class="dropdown-item" href="/account-management/history.html">History</a>
-                            </div>
-
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="/api-document/index.html" id="0ij" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-folder-o"></span> API Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="0ij">
-                                <a class="dropdown-item" href="/api-document/index.html">index</a>
-                                <a class="dropdown-item" href="/api-document/failover.html">Failover</a>
-                            </div>
-
-                        </li>
-                    </ul>
-                    <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
-
-                        <a class="text-secondary d-inline mt-2 ml-2" href="javascript:;" id="toggle-noti--panel" data-target="#notification-wrapper">
-                            <i class="fa fa-commenting-o"></i>
-                        </a>
-                        <button type="button" class="btn dropdown-toggle d-inline text-secondary bg-white" id="dropdownMenuOffset" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-
-                            abc.xyz.uio
-                        </button>
-                        <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+              <li class="nav-item dropdown navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/site-management/index.html"
+                  id="3ed"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-sitemap"></span> Site Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="3ed"
+                >
+                  <a class="dropdown-item" href="/site-management/server.html"
+                    >Server</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/site-management/server-expired.html"
+                    >Server (status expired)</a
+                  >
+                  <a class="dropdown-item" href="/site-management/group.html"
+                    >Group</a
+                  >
                 </div>
-            </nav>
-        </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/domain-management/index.html"
+                  id="2rg"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-globe"></span> Domain Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="2rg"
+                >
+                  <a class="dropdown-item" href="/domain-management/index.html"
+                    >index</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/domain-management/notfound.html"
+                    >index (status notfound)</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/route-management/index.html"
+                  id="0ij"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-random"></span> Route Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="0ij"
+                >
+                  <a class="dropdown-item" href="/route-management/index.html"
+                    >index</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/route-management/notfound.html"
+                    >index (status notfound)</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a
+                  class="nav-link"
+                  href="/disaster-tolerance-record/index.html"
+                >
+                  <span class="fa fa-file-text-o"></span> Disaster Tolerance
+                  Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href="/qps-record/index.html">
+                  <span class="fa fa-bar-chart-o"></span> QPS Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/account-management/index.html"
+                  id="0ij"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-user-o"></span> Account Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="0ij"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="/account-management/profile.html"
+                    >Profile</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/account-management/login-record.html"
+                    >Login Record</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/account-management/history.html"
+                    >History</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="/api-document/index.html"
+                  id="0ij"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-folder-o"></span> API Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="0ij"
+                >
+                  <a class="dropdown-item" href="/api-document/index.html"
+                    >index</a
+                  >
+                  <a class="dropdown-item" href="/api-document/failover.html"
+                    >Failover</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+              <a
+                class="text-secondary d-inline mt-2 ml-2"
+                href="javascript:;"
+                id="toggle-noti--panel"
+                data-target="#notification-wrapper"
+              >
+                <i class="fa fa-commenting-o"></i>
+              </a>
+              <button
+                type="button"
+                class="btn dropdown-toggle d-inline text-secondary bg-white"
+                id="dropdownMenuOffset"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                abc.xyz.uio
+              </button>
+              <div
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="dropdownMenuOffset"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-        <div class="row position-relative toggle-vertical">
-            <div class="col-md-2 col-sm-2 border-right bg-white " id="sidebar-left">
-                <nav class=" navbar-expand-md   height__full-auto d-none d-xl-block " id="sidebar-menu">
-                    <div class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar">
-                        <button type="button" class="btn btn-sm btn-outline-success px-4 ">Server</button>
-                        <button type="button" class="btn btn-sm btn-outline-success active  " data-target="#modal-newServer" data-toggle="modal">New Server</button>
-                    </div>
-
-                    <div class="row">
-                        <ul class="nav flex-column d-flex w-100">
-                            <li class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Dashboard
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Order
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Product
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Contact
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+      <div class="row position-relative toggle-vertical">
+        <div class="col-md-2 col-sm-2 border-right bg-white" id="sidebar-left">
+          <nav
+            class="navbar-expand-md height__full-auto d-none d-xl-block"
+            id="sidebar-menu"
+          >
+            <div
+              class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar"
+            >
+              <button type="button" class="btn btn-sm btn-outline-success px-4">
+                Server
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success active"
+                data-target="#modal-newServer"
+                data-toggle="modal"
+              >
+                New Server
+              </button>
             </div>
 
-            <main class="col-lg-12 col-xl-10 px-4 pt-3">
+            <div class="row">
+              <ul class="nav flex-column d-flex w-100">
+                <li
+                  class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Dashboard
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Order
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                <!-- breadcrum -->
-                <nav aria-label="breadcrumb" class="">
-                    <ol class="breadcrumb bg-transparent p-0 mb-2">
-                        <li class="breadcrumb-item btn-sm">
-                            <a href="#" class="text-secondary">API Document</a>
-                        </li>
-                        <li class="breadcrumb-item btn-sm " aria-current="page">Server - server</li>
-                        <li class="breadcrumb-item btn-sm active" aria-current="page">failover</li>
-                    </ol>
-                </nav>
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Product
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                <!-- end breadcrum -->
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Contact
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
+        <main class="col-lg-12 col-xl-10 px-4 pt-3">
+          <!-- breadcrum -->
+          <nav aria-label="breadcrumb" class="">
+            <ol class="breadcrumb bg-transparent p-0 mb-2">
+              <li class="breadcrumb-item btn-sm">
+                <a href="#" class="text-secondary">API Document</a>
+              </li>
+              <li class="breadcrumb-item btn-sm" aria-current="page">
+                Server - server
+              </li>
+              <li class="breadcrumb-item btn-sm active" aria-current="page">
+                failover
+              </li>
+            </ol>
+          </nav>
 
-                <!-- table -->
-                <div class="bg-white border p-4 rounded ">
+          <!-- end breadcrum -->
 
-                    <div class="table-responsive">
+          <!-- table -->
+          <div class="bg-white border p-4 rounded">
+            <div class="table-responsive">
+              <table class="table table-sm table__custom-style">
+                <tbody>
+                  <tr class="border-bottom">
+                    <td
+                      class="px-3 py-2 font-weight-bold text-right wpx-200 border-top-0"
+                      scope="row"
+                    >
+                      server/failover：
+                    </td>
+                    <td class="px-3 align-middle border-top-0">
+                      Disaster recovery of the server through IP
+                    </td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td
+                      class="px-3 py-2 font-weight-bold text-right wpx-200 border-top-0"
+                      scope="row"
+                    >
+                      URL：
+                    </td>
+                    <td class="px-3 align-middle border-top-0">
+                      https://{host}/api/server/failover
+                    </td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td
+                      class="px-3 py-2 font-weight-bold text-right wpx-200"
+                      scope="row"
+                    >
+                      HTTP request method：
+                    </td>
+                    <td class="px-3 align-middle">
+                      PUT
+                    </td>
+                  </tr>
 
-                        <table class="table table-sm table__custom-style">
+                  <tr class="border-bottom">
+                    <td
+                      class="px-3 py-2 font-weight-bold text-right wpx-200"
+                      scope="row"
+                    >
+                      Support Format：
+                    </td>
+                    <td class="px-3 align-middle">
+                      JSON
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-                            <tbody>
-                                <tr class="border-bottom">
-                                    <td class="px-3 py-2 font-weight-bold text-right wpx-200 border-top-0" scope="row">
-                                        server/failover：
-                                    </td>
-                                    <td class="px-3 align-middle border-top-0">
-                                        Disaster recovery of the server through IP
-                                    </td>
-                                </tr>
-                                <tr class="border-bottom">
-                                    <td class="px-3 py-2 font-weight-bold text-right wpx-200 border-top-0" scope="row">
-                                        URL：
-                                    </td>
-                                    <td class="px-3 align-middle border-top-0">
-                                        https://{host}/api/server/failover
-                                    </td>
-                                </tr>
-                                <tr class="border-bottom">
-                                    <td class="px-3 py-2 font-weight-bold text-right wpx-200" scope="row">
-                                        HTTP request method：
-                                    </td>
-                                    <td class="px-3 align-middle ">
-                                        PUT
-                                    </td>
-                                </tr>
+            <div class="table-responsive">
+              <h6 class="btn-sm font-weight-bold mb-0">
+                Disaster recovery request parameter description：
+              </h6>
+              <table class="table table-bordered table-sm table__custom-style">
+                <thead class="bg-light">
+                  <tr>
+                    <th class="pl-3 py-2" scope="col">Parameter</th>
+                    <th class="pl-3 py-2" scope="col">Required or not</th>
+                    <th class="pl-3 py-2" scope="col">
+                      Participate sign or not
+                    </th>
+                    <th class="pl-3 py-2" scope="col">Type</th>
+                    <th class="pl-3 py-2" scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-center align-middle" scope="row">
+                      Key
+                    </th>
+                    <td class="pl-3 align-middle">
+                      Yes
+                    </td>
+                    <td class="pl-3 align-middle">Yes</td>
+                    <td class="pl-3 align-middle">String</td>
+                    <td class="pl-3 align-middle">
+                      DNS company authorizes the key, the interface invokes the
+                      credentials, can be generated the acquisition in the
+                      profile
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center align-middle" scope="row">
+                      Key
+                    </th>
+                    <td class="pl-3 align-middle">
+                      Yes
+                    </td>
+                    <td class="pl-3 align-middle">Yes</td>
+                    <td class="pl-3 align-middle">String</td>
+                    <td class="pl-3 align-middle">
+                      DNS company authorizes the key, the interface invokes the
+                      credentials, can be generated the acquisition in the
+                      profile
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center align-middle" scope="row">
+                      Key
+                    </th>
+                    <td class="pl-3 align-middle">
+                      Yes
+                    </td>
+                    <td class="pl-3 align-middle">Yes</td>
+                    <td class="pl-3 align-middle">String</td>
+                    <td class="pl-3 align-middle">
+                      DNS company authorizes the key, the interface invokes the
+                      credentials, can be generated the acquisition in the
+                      profile
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-center align-middle" scope="row">
+                      Key
+                    </th>
+                    <td class="pl-3 align-middle">
+                      Yes
+                    </td>
+                    <td class="pl-3 align-middle">Yes</td>
+                    <td class="pl-3 align-middle">String</td>
+                    <td class="pl-3 align-middle">
+                      DNS company authorizes the key, the interface invokes the
+                      credentials, can be generated the acquisition in the
+                      profile
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-                                <tr class="border-bottom">
-                                    <td class="px-3 py-2 font-weight-bold text-right wpx-200" scope="row">
-                                        Support Format：
-                                    </td>
-                                    <td class="px-3 align-middle ">
-                                        JSON
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="table-responsive">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Disaster recovery request parameter description：</h6>
-                        <table class="table table-bordered table-sm table__custom-style">
-                            <thead class="bg-light">
-                                <tr>
-                                    <th class="pl-3 py-2" scope="col">Parameter</th>
-                                    <th class="pl-3 py-2" scope="col">Required or not</th>
-                                    <th class="pl-3 py-2" scope="col">Participate sign or not</th>
-                                    <th class="pl-3 py-2" scope="col">Type</th>
-                                    <th class="pl-3 py-2" scope="col">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="text-center align-middle" scope="row">
-                                        Key
-                                    </th>
-                                    <td class="pl-3 align-middle ">
-                                        Yes
-                                    </td>
-                                    <td class="pl-3 align-middle  ">Yes</td>
-                                    <td class="pl-3 align-middle ">String</td>
-                                    <td class="pl-3 align-middle ">DNS company authorizes the key, the interface invokes the credentials, can be generated
-                                        the acquisition in the profile</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center align-middle" scope="row">
-                                        Key
-                                    </th>
-                                    <td class="pl-3 align-middle ">
-                                        Yes
-                                    </td>
-                                    <td class="pl-3 align-middle  ">Yes</td>
-                                    <td class="pl-3 align-middle ">String</td>
-                                    <td class="pl-3 align-middle ">DNS company authorizes the key, the interface invokes the credentials, can be generated
-                                        the acquisition in the profile</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center align-middle" scope="row">
-                                        Key
-                                    </th>
-                                    <td class="pl-3 align-middle ">
-                                        Yes
-                                    </td>
-                                    <td class="pl-3 align-middle  ">Yes</td>
-                                    <td class="pl-3 align-middle ">String</td>
-                                    <td class="pl-3 align-middle ">DNS company authorizes the key, the interface invokes the credentials, can be generated
-                                        the acquisition in the profile</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center align-middle" scope="row">
-                                        Key
-                                    </th>
-                                    <td class="pl-3 align-middle ">
-                                        Yes
-                                    </td>
-                                    <td class="pl-3 align-middle  ">Yes</td>
-                                    <td class="pl-3 align-middle ">String</td>
-                                    <td class="pl-3 align-middle ">DNS company authorizes the key, the interface invokes the credentials, can be generated
-                                        the acquisition in the profile</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="example-req-param">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Example of disaster recovery request parameters：</h6>
-                        <pre class="bg-light border pre-scrollable d-flex text-left">
+            <div class="example-req-param">
+              <h6 class="btn-sm font-weight-bold mb-0">
+                Example of disaster recovery request parameters：
+              </h6>
+              <pre class="bg-light border pre-scrollable d-flex text-left">
                             <code>
                             {
                                 "key": "eb34c94e105e4c6663ae633be4269c20",
@@ -354,38 +547,47 @@
                             }
                             </code>
                         </pre>
+            </div>
 
-                    </div>
+            <div class="example-req-param mt-3">
+              <h6 class="btn-sm font-weight-bold mb-0">Sign rule：</h6>
+              <div class="bg-light border pre-scrollable p-4 btn-sm">
+                <div>
+                  1：All parameters except "sign" are sorted in ascending order
+                  by key, then extreme DNS company Secret(secret=xxxxxx) and the
+                  sorted parameter (key=value) are spliced ​​with &, the secret
+                  does not participate in sorting, place in the last one.
+                </div>
+                <div class="ml-3">
+                  Example:
+                  "ip=121.80.12.117&key=eb34c94e105e4c6663ae633be4269c20&nonce=b05c18ff317440bb5c8c30c65aa660f3&
+                  timestamp=1517622267&secret=84e70c9e3c52429263f9607549443890"
+                </div>
+                <div>2: Sort and combine the string to operate by sha1。</div>
+                <div class="ml-3">
+                  Example: "ed37bfe77097e765bce495458496db3d9f38b2a0"
+                </div>
+              </div>
+            </div>
 
-                    <div class="example-req-param mt-3">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Sign rule：</h6>
-                        <div class="bg-light border pre-scrollable p-4 btn-sm">
-                            <div>1：All parameters except "sign" are sorted in ascending order by key, then extreme DNS company
-                                Secret(secret=xxxxxx) and the sorted parameter (key=value) are spliced ​​with &, the secret
-                                does not participate in sorting, place in the last one.</div>
-                            <div class="ml-3">Example: "ip=121.80.12.117&key=eb34c94e105e4c6663ae633be4269c20&nonce=b05c18ff317440bb5c8c30c65aa660f3&
-                                timestamp=1517622267&secret=84e70c9e3c52429263f9607549443890"
-                            </div>
-                            <div>2: Sort and combine the string to operate by sha1。 </div>
-                            <div class="ml-3">Example: "ed37bfe77097e765bce495458496db3d9f38b2a0"</div>
-                        </div>
-
-                    </div>
-
-                    <div class="example-req-param mt-3">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Disaster recovery success return parameter：</h6>
-                        <pre class="bg-light border pre-scrollable d-flex text-left text-danger">
+            <div class="example-req-param mt-3">
+              <h6 class="btn-sm font-weight-bold mb-0">
+                Disaster recovery success return parameter：
+              </h6>
+              <pre
+                class="bg-light border pre-scrollable d-flex text-left text-danger"
+              >
                                     <code>
                                         "OK"
                                     </code>
                                 </pre>
+            </div>
 
-                    </div>
-
-
-                    <div class="example-req-param mt-3">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Disaster recovery fail return parameter：</h6>
-                        <pre class="bg-light border pre-scrollable d-flex text-left">
+            <div class="example-req-param mt-3">
+              <h6 class="btn-sm font-weight-bold mb-0">
+                Disaster recovery fail return parameter：
+              </h6>
+              <pre class="bg-light border pre-scrollable d-flex text-left">
                                 <code>
                                     {
                                         "status_code": 400,
@@ -394,496 +596,630 @@
                                     }
                                 </code>
                             </pre>
-
-                    </div>
-
-
-                    <div class="table-responsive">
-                        <h6 class="btn-sm font-weight-bold mb-0 ">Disaster recovery fail return parameter description</h6>
-                        <table class="table table-bordered table-sm table__custom-style">
-                            <thead class="bg-light">
-                                <tr>
-                                    <th class="pl-3 py-2" scope="col">Parameter</th>
-                                    <th class="pl-3 py-2" scope="col">Type</th>
-                                    <th class="pl-3 py-2" scope="col">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="pl-3 align-middle" scope="row">
-                                        status_code
-                                    </th>
-                                    <td class="pl-3 align-middle ">number</td>
-                                    <td class="pl-3 align-middle ">return the status code</td>
-                                </tr>
-                                <tr>
-                                    <th class="pl-3 align-middle" scope="row">
-                                        error_code
-                                    </th>
-                                    <td class="pl-3 align-middle ">string</td>
-                                    <td class="pl-3 align-middle ">error coding</td>
-                                </tr>
-                                <tr>
-                                    <th class="pl-3 align-middle" scope="row">
-                                        message
-                                    </th>
-                                    <td class="pl-3 align-middle ">string</td>
-                                    <td class="pl-3 align-middle ">error message</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-                <!-- end table -->
-
-
-                <div class="py-3 ">&nbsp;</div>
-
-                <footer class="d-flex justify-content-center border-top py-4 ">
-                    <span class="text-secondary my-0 py-4 btn-sm ">Copyright DNS, All Rights Reserved ICP No. 188882 Public Security Equipment 88888</span>
-                </footer>
-            </main>
-
-            <div id="overlay-content" class="position-absolute  w-100 h-100 ">&nbsp;</div>
-            <div id="notification-wrapper" class="notification-wrapper   position-absolute h-100 wpx-470 bg-white border  ">
-                <div id="noti-config-panel" class="noti-config-panel position-absolute bg-white w-100 h-100 ">
-                    <div class="noti-header border-bottom px-3 py-2">
-                        <a href="javascript:;" class="font-weight-bold text-dark close-config-noti">
-                            <i class="fa fa-chevron-left mr-3"></i>
-                            Notification Management
-                        </a>
-                    </div>
-                    <div class="config-body">
-                        <div class="row align-items-center px-3">
-                            <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
-                                <i class="fa fa-slack big-ico text-success mb-2"></i>
-                                <h5>Slack Notification Setting</h5>
-                                <!-- </a> -->
-                            </div>
-                            <div class="clearfix col-12 border-top border-bottom px-2 py-1">
-                                <div class="float-left form-group form-check  mb-0 pt-2">
-                                    <h6 class="mb-0">Slack Notification On/Off</h6>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
-                                </div>
-                            </div>
-                            <div class="clearfix col-12   px-2 pt-3 pb-0">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <h6 class="mb-0 ">Slack Incoming Interface</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
-                            <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
-                                <i class="fa fa-bell big-ico text-success mb-2"></i>
-                                <h5>Push Notification Setting</h5>
-                                <!-- </a> -->
-                            </div>
-                            <div class="clearfix col-12 border-top border-bottom px-2 py-1">
-                                <div class="float-left form-group form-check  mb-0 pt-2">
-                                    <h6 class="mb-0">Push Notification On/Off</h6>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
-                                </div>
-                            </div>
-                            <div class="clearfix col-12   border-bottom  px-2 pt-3 pb-0">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <h6 class="mb-0 ">Push Incoming Interface</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
-                            </div>
-                            <div class="center-control-line align-self-center col-12 mt-4 justify-content-center d-flex">
-                                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-5 mx-3 ">Save</button>
-
-                                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-3 mx-3 close-config-noti">Cancel and Back</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="noti-header border-bottom px-3 py-2">
-                    <div class="float-left form-group form-check  mb-0">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label font-weight-bold" for="exampleCheck1">Notification</label>
-                    </div>
-                    <div class=" text-right float-right ">
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="more-top-noti" data-target="#nav-tooltip-noti">
-                            <i class="fa fa-ellipsis-h"></i>
-                        </a>
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="config-noti" data-target="#noti-config-panel">
-                            <i class="fa fa-cog"></i>
-                        </a>
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="close-more-top-noti">&times;</a>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div id="nav-tooltip-noti" class="nav-tooltip-noti p-2 position-absolute bg-white shadow border">
-                        <ul class="nav d-block">
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Set as Read</small>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Clear All</small>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Set All as Read</small>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="noti-body ">
-                    <ul class="nav noti-lineItem ">
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- pagination -->
-                    <div class=" row px-2">
-                        <div class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3">
-                        </div>
-                        <div class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex">
-
-                        </div>
-                        <div class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex ">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination pagination-sm mt-2 pt-1">
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">2</a>
-                                    </li>
-
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- end pagination-->
-                </div>
             </div>
+
+            <div class="table-responsive">
+              <h6 class="btn-sm font-weight-bold mb-0">
+                Disaster recovery fail return parameter description
+              </h6>
+              <table class="table table-bordered table-sm table__custom-style">
+                <thead class="bg-light">
+                  <tr>
+                    <th class="pl-3 py-2" scope="col">Parameter</th>
+                    <th class="pl-3 py-2" scope="col">Type</th>
+                    <th class="pl-3 py-2" scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="pl-3 align-middle" scope="row">
+                      status_code
+                    </th>
+                    <td class="pl-3 align-middle">number</td>
+                    <td class="pl-3 align-middle">return the status code</td>
+                  </tr>
+                  <tr>
+                    <th class="pl-3 align-middle" scope="row">
+                      error_code
+                    </th>
+                    <td class="pl-3 align-middle">string</td>
+                    <td class="pl-3 align-middle">error coding</td>
+                  </tr>
+                  <tr>
+                    <th class="pl-3 align-middle" scope="row">
+                      message
+                    </th>
+                    <td class="pl-3 align-middle">string</td>
+                    <td class="pl-3 align-middle">error message</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- end table -->
+
+          <div class="py-3">&nbsp;</div>
+
+          <footer class="d-flex justify-content-center border-top py-4">
+            <span class="text-secondary my-0 py-4 btn-sm"
+              >Copyright DNS, All Rights Reserved ICP No. 188882 Public Security
+              Equipment 88888</span
+            >
+          </footer>
+        </main>
+
+        <div id="overlay-content" class="position-absolute w-100 h-100">
+          &nbsp;
         </div>
+        <div
+          id="notification-wrapper"
+          class="notification-wrapper position-absolute h-100 wpx-470 bg-white border"
+        >
+          <div
+            id="noti-config-panel"
+            class="noti-config-panel position-absolute bg-white w-100 h-100"
+          >
+            <div class="noti-header border-bottom px-3 py-2">
+              <a
+                href="javascript:;"
+                class="font-weight-bold text-dark close-config-noti"
+              >
+                <i class="fa fa-chevron-left mr-3"></i>
+                Notification Management
+              </a>
+            </div>
+            <div class="config-body">
+              <div class="row align-items-center px-3">
+                <div
+                  class="col-12 box-content mx-auto card-body px-2 text-center"
+                >
+                  <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                  <i class="fa fa-slack big-ico text-success mb-2"></i>
+                  <h5>Slack Notification Setting</h5>
+                  <!-- </a> -->
+                </div>
+                <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                  <div class="float-left form-group form-check mb-0 pt-2">
+                    <h6 class="mb-0">Slack Notification On/Off</h6>
+                  </div>
+                  <div class="text-right float-right">
+                    <i
+                      class="fa fa-toggle-on text-success ico-2em"
+                      style=""
+                    ></i>
+                  </div>
+                </div>
+                <div class="clearfix col-12 px-2 pt-3 pb-0">
+                  <div class="float-left form-group form-check mb-0">
+                    <h6 class="mb-0">Slack Incoming Interface</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                  <small class="text-muted ml-4" style="word-wrap: break-word;"
+                    >https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small
+                  >
+                </div>
+                <div class="col-12">
+                  <hr />
+                </div>
+                <div
+                  class="col-12 box-content mx-auto card-body px-2 text-center"
+                >
+                  <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                  <i class="fa fa-bell big-ico text-success mb-2"></i>
+                  <h5>Push Notification Setting</h5>
+                  <!-- </a> -->
+                </div>
+                <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                  <div class="float-left form-group form-check mb-0 pt-2">
+                    <h6 class="mb-0">Push Notification On/Off</h6>
+                  </div>
+                  <div class="text-right float-right">
+                    <i
+                      class="fa fa-toggle-on text-success ico-2em"
+                      style=""
+                    ></i>
+                  </div>
+                </div>
+                <div class="clearfix col-12 border-bottom px-2 pt-3 pb-0">
+                  <div class="float-left form-group form-check mb-0">
+                    <h6 class="mb-0">Push Incoming Interface</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                  <small class="text-muted ml-4" style="word-wrap: break-word;"
+                    >https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small
+                  >
+                </div>
+                <div
+                  class="center-control-line align-self-center col-12 mt-4 justify-content-center d-flex"
+                >
+                  <button
+                    type="button"
+                    class="btn col-sm-auto btn-outline-success mb-2 btn-sm px-5 mx-3"
+                  >
+                    Save
+                  </button>
 
+                  <button
+                    type="button"
+                    class="btn col-sm-auto btn-outline-success mb-2 btn-sm px-3 mx-3 close-config-noti"
+                  >
+                    Cancel and Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="noti-header border-bottom px-3 py-2">
+            <div class="float-left form-group form-check mb-0">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label
+                class="form-check-label font-weight-bold"
+                for="exampleCheck1"
+                >Notification</label
+              >
+            </div>
+            <div class="text-right float-right">
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="more-top-noti"
+                data-target="#nav-tooltip-noti"
+              >
+                <i class="fa fa-ellipsis-h"></i>
+              </a>
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="config-noti"
+                data-target="#noti-config-panel"
+              >
+                <i class="fa fa-cog"></i>
+              </a>
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="close-more-top-noti"
+                >&times;</a
+              >
+            </div>
+            <div class="clearfix"></div>
+            <div
+              id="nav-tooltip-noti"
+              class="nav-tooltip-noti p-2 position-absolute bg-white shadow border"
+            >
+              <ul class="nav d-block">
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Set as Read</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Clear All</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Set All as Read</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="noti-body">
+            <ul class="nav noti-lineItem">
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- pagination -->
+            <div class="row px-2">
+              <div
+                class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3"
+              ></div>
+              <div
+                class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex"
+              ></div>
+              <div
+                class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex"
+              >
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-sm mt-2 pt-1">
+                    <li class="page-item">
+                      <a
+                        class="page-link text-secondary"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">2</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link text-secondary"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- end pagination-->
+          </div>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- build:js -->
     <script type="text/template" id="tlp_addLineItemIP">
-        <div class="line-item-inputIp mb-2">
-                <form class="form-row">
-                    <input type="text" class="form-control form-control-sm text-center col-3" value="10.12.12.12" role="button" rel="popover"
-                        data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Already used in server 1">
-                    <input type="text" class="form-control form-control-sm mx-2 col" placeholder="Input your note">
-                    <button class="btn btn-sm bg-white border col-1 remove-LineIP">
-                        <i class="fa fa-trash-o"></i>
-                    </button>
-                </form>
-            </div>
+      <div class="line-item-inputIp mb-2">
+              <form class="form-row">
+                  <input type="text" class="form-control form-control-sm text-center col-3" value="10.12.12.12" role="button" rel="popover"
+                      data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Already used in server 1">
+                  <input type="text" class="form-control form-control-sm mx-2 col" placeholder="Input your note">
+                  <button class="btn btn-sm bg-white border col-1 remove-LineIP">
+                      <i class="fa fa-trash-o"></i>
+                  </button>
+              </form>
+          </div>
     </script>
-    <script type="text/javascript " src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script
+      type="text/javascript "
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="../assets/js/main.js "></script>
+    <script src="./assets/js/main.js "></script>
     <!-- endbuild -->
-</body>
-
+  </body>
 </html>

@@ -1,850 +1,1252 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
     <title>New page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- build:css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <!-- endbuild -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0">
-                <div class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center">
-                    <div class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1">
-                        <button type="button" class="btn btn-dark col-6 ml-4 ">Logo</button>
-                        <button type="button" class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block " data-sidebar="#sidebar-left">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                        <button class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col " type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                    </div>
+      <div class="row">
+        <nav
+          class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0"
+        >
+          <div
+            class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center"
+          >
+            <div
+              class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1"
+            >
+              <button type="button" class="btn btn-dark col-6 ml-4">
+                Logo
+              </button>
+              <button
+                type="button"
+                class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block"
+                data-sidebar="#sidebar-left"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+              <button
+                class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+            </div>
+          </div>
 
+          <div
+            class="collapse navbar-collapse py-2 col-auto col-lg-10 col-xl-10"
+            id="navbarsExampleDefault"
+          >
+            <ul class="navbar-nav mr-auto ml-3 table-responsive">
+              <li class="nav-item navItem__link active">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-link"></span> Control Center</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-paperclip"></span> Tag Management</a
+                >
+              </li>
+
+              <li class="nav-item dropdown navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="http://example.com"
+                  id="dropdown01"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-sitemap"></span> Site Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="dropdown01"
+                >
+                  <a class="dropdown-item" href="#">Server</a>
+                  <a class="dropdown-item" href="#">Site</a>
                 </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-globe"></span> Domain Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-paperclip"></span> Route Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-file-text-o"></span> Disaster Tolerance
+                  Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-bar-chart-o"></span> QPS Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-user-o"></span> Account Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-folder-o"></span> API Management</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+              <a
+                class="text-secondary d-inline mt-2 ml-2"
+                href="javascript:;"
+                id="toggle-noti--panel"
+                data-target="#notification-wrapper"
+              >
+                <i class="fa fa-commenting-o"></i>
+              </a>
+              <button
+                type="button"
+                class="btn dropdown-toggle d-inline text-secondary bg-white"
+                id="dropdownMenuOffset"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                abc.xyz.uio
+              </button>
+              <div
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="dropdownMenuOffset"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-                <div class="collapse navbar-collapse py-2 col-auto col-lg-10 col-xl-10 " id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto ml-3 table-responsive">
-                        <li class="nav-item navItem__link active">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-link"></span> Control Center</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-paperclip"></span> Tag Management</a>
-                        </li>
+      <div class="row toggle-vertical position-relative">
+        <div
+          class="col-md-2 col-sm-2 border-right bg-white toggle-vertical"
+          id="sidebar-left"
+        >
+          <nav
+            class="navbar-expand-md height__full-auto d-none d-xl-block"
+            id="sidebar-menu"
+          >
+            <div
+              class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar"
+            >
+              <button type="button" class="btn btn-sm btn-outline-success px-4">
+                Site
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success active"
+              >
+                Create Site
+              </button>
+            </div>
+            <div class="w-100">
+              <input
+                type="text"
+                class="form-control border-success form-control-sm"
+                id="inputsearch"
+                placeholder=""
+              />
+            </div>
+            <div class="d-flex mt-2 mb-4 d-flex justify-content-between">
+              <button type="button" class="btn btn-sm btn-outline-success px-4">
+                Site
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-success">
+                Create Site
+              </button>
+            </div>
+            <div class="row">
+              <ul class="nav flex-column d-flex w-100">
+                <li
+                  class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Dashboard
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                        <li class="nav-item dropdown navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-sitemap"></span> Site Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdown01">
-                                <a class="dropdown-item" href="#">Server</a>
-                                <a class="dropdown-item" href="#">Site</a>
-                            </div>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-globe"></span> Domain Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-paperclip"></span> Route Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-file-text-o"></span> Disaster Tolerance Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-bar-chart-o"></span> QPS Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-user-o"></span> Account Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-folder-o"></span> API Management</a>
-                        </li>
-                    </ul>
-                    <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Order
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                        <a class="text-secondary d-inline mt-2 ml-2" href="javascript:;" id="toggle-noti--panel" data-target="#notification-wrapper">
-                            <i class="fa fa-commenting-o"></i>
-                        </a>
-                        <button type="button" class="btn dropdown-toggle d-inline text-secondary bg-white" id="dropdownMenuOffset" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Product
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                            abc.xyz.uio
-                        </button>
-                        <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Contact
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <div class="row toggle-vertical position-relative">
-            <div class="col-md-2 col-sm-2 border-right bg-white toggle-vertical" id="sidebar-left">
-                <nav class=" navbar-expand-md   height__full-auto d-none d-xl-block " id="sidebar-menu">
-                    <div class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar">
-                        <button type="button" class="btn btn-sm btn-outline-success px-4 ">Site</button>
-                        <button type="button" class="btn btn-sm btn-outline-success active  ">Create Site</button>
-                    </div>
-                    <div class="w-100">
-                        <input type="text" class="form-control border-success form-control-sm" id="inputsearch" placeholder="">
-                    </div>
-                    <div class="d-flex mt-2 mb-4 d-flex justify-content-between ">
-                        <button type="button" class="btn btn-sm btn-outline-success px-4 ">Site</button>
-                        <button type="button" class="btn btn-sm btn-outline-success ">Create Site</button>
-                    </div>
-                    <div class="row">
-                        <ul class="nav flex-column d-flex w-100">
-                            <li class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Dashboard
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
+        <main class="col-lg-12 col-xl-10 px-4 pt-3">
+          <!-- table -->
 
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Order
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Product
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Contact
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+          <div class="row">
+            <div class="col col-md-12 col-sm-12 col-lg-7 mt-3">
+              <div class="card btn-sm">
+                <div
+                  class="box-header bg-transparent border-0 card-header justify-content-between mt-1"
+                >
+                  <h6 class="font-weight-bold">Profile</h6>
+                </div>
+                <div class="box-content col-12 col-sm-6 mx-auto card-body px-2">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="asdasdasds"
+                      />
+                      <small class="form-text text-muted text-right"
+                        >&nbsp;</small
+                      >
                     </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="12323243@gmail.com"
+                      />
+                      <small class="form-text text-muted text-right"
+                        >&nbsp;</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="12323243"
+                      />
+                    </div>
+                    <div class="form-group py-1">
+                      <hr />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Please current password"
+                      />
+                      <small class="form-text text-muted text-right"
+                        >&nbsp;</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Please new password"
+                      />
+                      <small class="form-text text-muted text-right"
+                        >0/16</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Please re-type new password"
+                      />
+                      <small class="form-text text-muted text-right"
+                        >0/16</small
+                      >
+                    </div>
+                  </form>
+                  <div class="form-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                      checked
+                    />
+                    <label class="form-check-label" for="exampleCheck1">
+                      <small
+                        >Allow notifications, we will push some securities alarm
+                        and more to you</small
+                      >
+                    </label>
+                  </div>
+                  <div class="center-control-line my-2 text-center mt-5">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-success px-3 mx-2 active"
+                    >
+                      Confirm and Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-12 col-sm-12 col-lg-5 mt-3">
+              <div class="card btn-sm h-100">
+                <div
+                  class="box-header bg-transparent border-0 card-header justify-content-between mt-1"
+                >
+                  <h6 class="font-weight-bold">Suggestion</h6>
+                </div>
+                <div class="row align-items-center">
+                  <div
+                    class="col-12 box-content mx-auto card-body px-2 text-center"
+                  >
+                    <div
+                      class="text-black-50"
+                      data-toggle="modal"
+                      data-target="#modal-addSubAccount"
+                    >
+                      <i class="fa fa-link big-ico"></i>
+                    </div>
+                    <button
+                      type="button"
+                      class="clearfix btn btn-secondary mt-4 px-3"
+                      disabled
+                    >
+                      Link and log in
+                    </button>
+                  </div>
+                  <div class="col-12 py-4">
+                    <hr />
+                  </div>
+                  <div
+                    class="col-12 box-content mx-auto card-body px-2 text-center"
+                  >
+                    <div
+                      class="text-black-50"
+                      data-toggle="modal"
+                      data-target="#modal-addSubAccount"
+                    >
+                      <i class="fa fa-shield big-ico"></i>
+                    </div>
+                    <button
+                      type="button"
+                      class="clearfix btn btn-secondary mt-4 px-3"
+                      disabled
+                    >
+                      Enable 2FA
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- end table -->
+
+          <div class="py-3">&nbsp;</div>
+
+          <footer class="d-flex justify-content-center border-top py-4">
+            <span class="text-secondary my-0 py-4 btn-sm"
+              >Copyright DNS, All Rights Reserved ICP No. 188882 Public Security
+              Equipment 88888</span
+            >
+          </footer>
+        </main>
+
+        <div id="overlay-content" class="position-absolute w-100 h-100">
+          &nbsp;
+        </div>
+        <div
+          id="notification-wrapper"
+          class="notification-wrapper position-absolute h-100 wpx-470 bg-white border"
+        >
+          <div
+            id="noti-config-panel"
+            class="noti-config-panel position-absolute bg-white w-100 h-100"
+          >
+            <div class="noti-header border-bottom px-3 py-2">
+              <a
+                href="javascript:;"
+                class="font-weight-bold text-dark close-config-noti"
+              >
+                <i class="fa fa-chevron-left mr-3"></i>
+                Notification Management
+              </a>
+            </div>
+            <div class="config-body">
+              <div class="row align-items-center px-3">
+                <div
+                  class="col-12 box-content mx-auto card-body px-2 text-center"
+                >
+                  <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                  <i class="fa fa-slack big-ico text-success mb-2"></i>
+                  <h5>Slack Notification Setting</h5>
+                  <!-- </a> -->
+                </div>
+                <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                  <div class="float-left form-group form-check mb-0 pt-2">
+                    <h6 class="mb-0">Slack Notification On/Off</h6>
+                  </div>
+                  <div class="text-right float-right">
+                    <i
+                      class="fa fa-toggle-on text-success ico-2em"
+                      style=""
+                    ></i>
+                  </div>
+                </div>
+                <div class="clearfix col-12 px-2 pt-3 pb-0">
+                  <div class="float-left form-group form-check mb-0">
+                    <h6 class="mb-0">Slack Incoming Interface</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                  <small class="text-muted ml-4" style="word-wrap: break-word;"
+                    >https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small
+                  >
+                </div>
+                <div class="col-12">
+                  <hr />
+                </div>
+                <div
+                  class="col-12 box-content mx-auto card-body px-2 text-center"
+                >
+                  <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                  <i class="fa fa-bell big-ico text-success mb-2"></i>
+                  <h5>Push Notification Setting</h5>
+                  <!-- </a> -->
+                </div>
+                <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                  <div class="float-left form-group form-check mb-0 pt-2">
+                    <h6 class="mb-0">Push Notification On/Off</h6>
+                  </div>
+                  <div class="text-right float-right">
+                    <i
+                      class="fa fa-toggle-on text-success ico-2em"
+                      style=""
+                    ></i>
+                  </div>
+                </div>
+                <div class="clearfix col-12 border-bottom px-2 pt-3 pb-0">
+                  <div class="float-left form-group form-check mb-0">
+                    <h6 class="mb-0">Push Incoming Interface</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                  <small class="text-muted ml-4" style="word-wrap: break-word;"
+                    >https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small
+                  >
+                </div>
+                <div
+                  class="center-control-line align-self-center col-12 mt-4 justify-content-center d-flex"
+                >
+                  <button
+                    type="button"
+                    class="btn col-sm-auto btn-outline-success mb-2 btn-sm px-5 mx-3"
+                  >
+                    Save
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn col-sm-auto btn-outline-success mb-2 btn-sm px-3 mx-3 close-config-noti"
+                  >
+                    Cancel and Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="noti-header border-bottom px-3 py-2">
+            <div class="float-left form-group form-check mb-0">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label
+                class="form-check-label font-weight-bold"
+                for="exampleCheck1"
+                >Notification</label
+              >
+            </div>
+            <div class="text-right float-right">
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="more-top-noti"
+                data-target="#nav-tooltip-noti"
+              >
+                <i class="fa fa-ellipsis-h"></i>
+              </a>
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="config-noti"
+                data-target="#noti-config-panel"
+              >
+                <i class="fa fa-cog"></i>
+              </a>
+              <a
+                href="javascript:;"
+                class="text-secondary ml-1 d-inline-block"
+                id="close-more-top-noti"
+                >&times;</a
+              >
+            </div>
+            <div class="clearfix"></div>
+            <div
+              id="nav-tooltip-noti"
+              class="nav-tooltip-noti p-2 position-absolute bg-white shadow border"
+            >
+              <ul class="nav d-block">
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Set as Read</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Clear All</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" class="text-secondary">
+                    <small>Set All as Read</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="noti-body">
+            <ul class="nav noti-lineItem">
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Domain</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com NS absnormal
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      Please check
+                      <a href="javascript:;" class="text-success">Check it</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 border-bottom px-3 py-2">
+                <div class="line-f clearfix">
+                  <div class="float-left form-group form-check mb-0">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="akjdhakhd"
+                    />
+                    <label class="form-check-label" for="akjdhakhd"
+                      >Server</label
+                    >
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">2018-09-09 12:32:32</small>
+                  </div>
+                </div>
+                <div class="line-f">
+                  <div class="float-left form-group form-check mb-0">
+                    <span class="text-secondary bullet-span off">
+                      <small>
+                        Your domain abc.com has expired,
+                        <a href="javascript:;" class="text-success">Renewal</a>
+                      </small>
+                    </span>
+                  </div>
+                  <div class="text-right float-right">
+                    <small class="text-secondary">
+                      expired time is
+                      <a href="javascript:;" class="text-secondary">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- pagination -->
+            <div class="row px-2">
+              <div
+                class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3"
+              ></div>
+              <div
+                class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex"
+              ></div>
+              <div
+                class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex"
+              >
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-sm mt-2 pt-1">
+                    <li class="page-item">
+                      <a
+                        class="page-link text-secondary"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">2</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link text-secondary" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link text-secondary"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
                 </nav>
+              </div>
             </div>
-
-            <main class="col-lg-12 col-xl-10 px-4 pt-3  ">
-
-
-                <!-- table -->
-
-                <div class="row ">
-                    <div class="col col-md-12 col-sm-12 col-lg-7 mt-3 ">
-                        <div class="card btn-sm  ">
-                            <div class="box-header bg-transparent border-0 card-header justify-content-between mt-1">
-                                <h6 class="font-weight-bold">Profile</h6>
-                            </div>
-                            <div class="box-content col-12 col-sm-6 mx-auto card-body px-2 ">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control " placeholder="asdasdasds">
-                                        <small class="form-text text-muted text-right">&nbsp;</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control " placeholder="12323243@gmail.com">
-                                        <small class="form-text text-muted text-right">&nbsp;</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control " placeholder="12323243">
-                                    </div>
-                                    <div class="form-group py-1">
-                                        <hr>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control " placeholder="Please current password">
-                                        <small class="form-text text-muted text-right">&nbsp;</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control " placeholder="Please new password">
-                                        <small class="form-text text-muted text-right">0/16</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control " placeholder="Please re-type new password">
-                                        <small class="form-text text-muted text-right">0/16</small>
-                                    </div>
-                                </form>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        <small>Allow notifications, we will push some securities alarm and more to you</small>
-                                    </label>
-                                </div>
-                                <div class="center-control-line my-2 text-center mt-5">
-                                    <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Confirm and Submit</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col col-md-12 col-sm-12 col-lg-5 mt-3 ">
-                        <div class="card btn-sm h-100 ">
-                            <div class="box-header bg-transparent border-0 card-header justify-content-between mt-1">
-                                <h6 class="font-weight-bold">Suggestion</h6>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                    <div class="text-black-50" data-toggle="modal" data-target="#modal-addSubAccount">
-                                        <i class="fa fa-link big-ico"></i>
-                                    </div>
-                                    <button type="button" class="clearfix btn btn-secondary  mt-4 px-3 " disabled>Link and log in</button>
-                                </div>
-                                <div class="col-12 py-4">
-                                    <hr>
-                                </div>
-                                <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                    <div class="text-black-50" data-toggle="modal" data-target="#modal-addSubAccount">
-                                        <i class="fa fa-shield big-ico"></i>
-                                    </div>
-                                    <button type="button" class="clearfix btn btn-secondary  mt-4 px-3 " disabled>Enable 2FA</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- </div> -->
-                <!-- end table -->
-
-                <div class="py-3">&nbsp;</div>
-
-                <footer class="d-flex justify-content-center border-top py-4">
-                    <span class="text-secondary my-0 py-4 btn-sm">Copyright DNS, All Rights Reserved ICP No. 188882 Public Security Equipment 88888</span>
-                </footer>
-            </main>
-
-            <div id="overlay-content" class="position-absolute  w-100 h-100 ">&nbsp;</div>
-            <div id="notification-wrapper" class="notification-wrapper   position-absolute h-100 wpx-470 bg-white border  ">
-                <div id="noti-config-panel" class="noti-config-panel position-absolute bg-white w-100 h-100 ">
-                    <div class="noti-header border-bottom px-3 py-2">
-                        <a href="javascript:;" class="font-weight-bold text-dark close-config-noti">
-                            <i class="fa fa-chevron-left mr-3"></i>
-                            Notification Management
-                        </a>
-                    </div>
-                    <div class="config-body">
-                        <div class="row align-items-center px-3">
-                            <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
-                                <i class="fa fa-slack big-ico text-success mb-2"></i>
-                                <h5>Slack Notification Setting</h5>
-                                <!-- </a> -->
-                            </div>
-                            <div class="clearfix col-12 border-top border-bottom px-2 py-1">
-                                <div class="float-left form-group form-check  mb-0 pt-2">
-                                    <h6 class="mb-0">Slack Notification On/Off</h6>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
-                                </div>
-                            </div>
-                            <div class="clearfix col-12   px-2 pt-3 pb-0">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <h6 class="mb-0 ">Slack Incoming Interface</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
-                            <div class="col-12 box-content mx-auto card-body px-2 text-center">
-                                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
-                                <i class="fa fa-bell big-ico text-success mb-2"></i>
-                                <h5>Push Notification Setting</h5>
-                                <!-- </a> -->
-                            </div>
-                            <div class="clearfix col-12 border-top border-bottom px-2 py-1">
-                                <div class="float-left form-group form-check  mb-0 pt-2">
-                                    <h6 class="mb-0">Push Notification On/Off</h6>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
-                                </div>
-                            </div>
-                            <div class="clearfix col-12   border-bottom  px-2 pt-3 pb-0">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <h6 class="mb-0 ">Push Incoming Interface</h6>
-                                </div>
-                                <div class="clearfix"></div>
-                                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
-                            </div>
-                            <div class="center-control-line align-self-center col-12 mt-4 justify-content-center d-flex">
-                                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-5 mx-3 ">Save</button>
-
-                                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-3 mx-3 close-config-noti">Cancel and Back</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="noti-header border-bottom px-3 py-2">
-                    <div class="float-left form-group form-check  mb-0">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label font-weight-bold" for="exampleCheck1">Notification</label>
-                    </div>
-                    <div class=" text-right float-right ">
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="more-top-noti" data-target="#nav-tooltip-noti">
-                            <i class="fa fa-ellipsis-h"></i>
-                        </a>
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="config-noti" data-target="#noti-config-panel">
-                            <i class="fa fa-cog"></i>
-                        </a>
-                        <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="close-more-top-noti">&times;</a>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div id="nav-tooltip-noti" class="nav-tooltip-noti p-2 position-absolute bg-white shadow border">
-                        <ul class="nav d-block">
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Set as Read</small>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Clear All</small>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="text-secondary">
-                                    <small>Set All as Read</small>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="noti-body ">
-                    <ul class="nav noti-lineItem ">
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Domain</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com NS absnormal
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        Please check
-                                        <a href="javascript:;" class="text-success">Check it</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="w-100 border-bottom px-3 py-2">
-                            <div class="line-f clearfix">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <input type="checkbox" class="form-check-input" id="akjdhakhd">
-                                    <label class="form-check-label " for="akjdhakhd">Server</label>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">2018-09-09 12:32:32</small>
-                                </div>
-                            </div>
-                            <div class="line-f">
-                                <div class="float-left form-group form-check  mb-0">
-                                    <span class="text-secondary bullet-span off">
-                                        <small>
-                                            Your domain abc.com has expired,
-                                            <a href="javascript:;" class="text-success">Renewal</a>
-                                        </small>
-                                    </span>
-                                </div>
-                                <div class=" text-right float-right ">
-                                    <small class="text-secondary">
-                                        expired time is
-                                        <a href="javascript:;" class="text-secondary">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </small>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- pagination -->
-                    <div class=" row px-2">
-                        <div class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3">
-                        </div>
-                        <div class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex">
-
-                        </div>
-                        <div class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex ">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination pagination-sm mt-2 pt-1">
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">2</a>
-                                    </li>
-
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link text-secondary" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- end pagination-->
-                </div>
-            </div>
+            <!-- end pagination-->
+          </div>
         </div>
-
+      </div>
     </div>
 
     <!-- Modal NS Check Result -->
-    <div class="modal fade" id="modal-nsCheckResults" tabindex="-1" role="dialog" aria-labelledby="modal-nsCheckResultsTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content ">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title btn-sm font-weight-bold">NS Check Result</h5>
-                </div>
-                <div class="modal-body d-inline justify-content-between ">
-                    <div class="btn-sm  border-rounded border">
-                        <ul class="py-3 m-0 nav flex-column px-2">
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Domain:</span> abc.xyz.com
-                            </li>
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Expired date:</span> 2018-09-09
-                            </li>
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">DNS:</span> ns1.xz.com;ns2.xz.com
-                            </li>
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Status:</span> clienttransfer http:// clienttransfer http:// clienttransfer http://
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="center-control-line mt-4 text-center">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modal-nsCheckResults" aria-lsabel="Close">Close</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modal-nsCheckResults"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-nsCheckResultsTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title btn-sm font-weight-bold">NS Check Result</h5>
+          </div>
+          <div class="modal-body d-inline justify-content-between">
+            <div class="btn-sm border-rounded border">
+              <ul class="py-3 m-0 nav flex-column px-2">
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Domain:</span
+                  >
+                  abc.xyz.com
+                </li>
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Expired date:</span
+                  >
+                  2018-09-09
+                </li>
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >DNS:</span
+                  >
+                  ns1.xz.com;ns2.xz.com
+                </li>
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Status:</span
+                  >
+                  clienttransfer http:// clienttransfer http:// clienttransfer
+                  http://
+                </li>
+              </ul>
             </div>
+            <div class="center-control-line mt-4 text-center">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+                data-dismiss="#modal-nsCheckResults"
+                aria-lsabel="Close"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal certificate Check result -->
-    <div class="modal fade" id="modal-certificateResult" tabindex="-1" role="dialog" aria-labelledby="modal-certificateResultTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content ">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title btn-sm font-weight-bold">Certificate check result</h5>
-                </div>
-                <div class="modal-body d-inline justify-content-between ">
-                    <div class="btn-sm  border-rounded border">
-                        <ul class="py-3 m-0 nav flex-column px-2">
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Awarded to:</span> abc.xyz.com
-                            </li>
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Issuer:</span> GeoTrust SSL CA-G3
-                            </li>
-                            <li>
-                                <span class="wpx-90 d-inline-block font-weight-bold">Valid time:</span> From 2018/11/11 to 2018/5/5
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="center-control-line mt-4 text-center">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modal-certificateResult" aria-label="Close">Close</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modal-certificateResult"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-certificateResultTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title btn-sm font-weight-bold">
+              Certificate check result
+            </h5>
+          </div>
+          <div class="modal-body d-inline justify-content-between">
+            <div class="btn-sm border-rounded border">
+              <ul class="py-3 m-0 nav flex-column px-2">
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Awarded to:</span
+                  >
+                  abc.xyz.com
+                </li>
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Issuer:</span
+                  >
+                  GeoTrust SSL CA-G3
+                </li>
+                <li>
+                  <span class="wpx-90 d-inline-block font-weight-bold"
+                    >Valid time:</span
+                  >
+                  From 2018/11/11 to 2018/5/5
+                </li>
+              </ul>
             </div>
+            <div class="center-control-line mt-4 text-center">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+                data-dismiss="#modal-certificateResult"
+                aria-label="Close"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- Modal move group -->
-    <div class="modal fade" id="modal-moveGroup" tabindex="-1" role="dialog" aria-labelledby="modal-moveGroupTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content ">
-                <div class="modal-header border-0">
-                    <!-- <h5 class="modal-title btn-sm font-weight-bold">NS Check Result</h5> -->
-                </div>
-                <div class="modal-body d-inline justify-content-between ">
-                    <div class="">
-                        <form class="form-inline d-flex justify-content-around pb-5">
-                            <select class="form-control form-control-sm col-5 " id="exampleFormControlSelect1s">
-                                <option>Please select the site to move to </option>
-                                <option>Statistics</option>
-                                <option>Analyze</option>
-                            </select>
-                            <select class="form-control form-control-sm col-5" id="exampleFormControlSelect1a">
-                                <option>Please select the group to move to</option>
-                                <option>Statistics</option>
-                                <option>Analyze</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="center-control-line my-2 text-center mt-5">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Confirm move</button>
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modal-moveGroup">Cancel move</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modal-moveGroup"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-moveGroupTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <!-- <h5 class="modal-title btn-sm font-weight-bold">NS Check Result</h5> -->
+          </div>
+          <div class="modal-body d-inline justify-content-between">
+            <div class="">
+              <form class="form-inline d-flex justify-content-around pb-5">
+                <select
+                  class="form-control form-control-sm col-5"
+                  id="exampleFormControlSelect1s"
+                >
+                  <option>Please select the site to move to </option>
+                  <option>Statistics</option>
+                  <option>Analyze</option>
+                </select>
+                <select
+                  class="form-control form-control-sm col-5"
+                  id="exampleFormControlSelect1a"
+                >
+                  <option>Please select the group to move to</option>
+                  <option>Statistics</option>
+                  <option>Analyze</option>
+                </select>
+              </form>
             </div>
+            <div class="center-control-line my-2 text-center mt-5">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2 active"
+              >
+                Confirm move
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+                data-dismiss="#modal-moveGroup"
+              >
+                Cancel move
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <!-- Modal ađd group -->
-    <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="modalConfirmTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content px-3 py-2">
-                <div class="modal-body d-inline justify-content-between">
-                    <div class="btn-sm text-center my-2">
-                        Please ensure that all the contents of
-                        <span class="text-muted">Group name a</span> have been emptied, otherwise the deletion cannot be performed
-                    </div>
-                    <div class="center-control-line my-2 text-center">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Confirm delete</button>
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modalConfirm">Cancel delete</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modalConfirm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalConfirmTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content px-3 py-2">
+          <div class="modal-body d-inline justify-content-between">
+            <div class="btn-sm text-center my-2">
+              Please ensure that all the contents of
+              <span class="text-muted">Group name a</span> have been emptied,
+              otherwise the deletion cannot be performed
             </div>
+            <div class="center-control-line my-2 text-center">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2 active"
+              >
+                Confirm delete
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+                data-dismiss="#modalConfirm"
+              >
+                Cancel delete
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal reset abnormal domain -->
-    <div class="modal fade" id="modal-resetAbnormalDomain" tabindex="-1" role="dialog" aria-labelledby="modal-resetAbnormalDomainTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content px-3 py-2">
-                <div class="modal-body d-inline justify-content-between">
-                    <div class="btn-sm text-center my-2">
-                        <p>
-                            This operation resets the domain that status is abnormal to wait fro detecting status and repspone for the server timing
-                            detection.
-                            <br> Are you sure to reset all domains with abnormal status ?
-                        </p>
-                    </div>
-                    <div class="center-control-line my-2 text-center">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Confirm reset</button>
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modal-resetAbnormalDomain">Cancel reset</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modal-resetAbnormalDomain"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-resetAbnormalDomainTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content px-3 py-2">
+          <div class="modal-body d-inline justify-content-between">
+            <div class="btn-sm text-center my-2">
+              <p>
+                This operation resets the domain that status is abnormal to wait
+                fro detecting status and repspone for the server timing
+                detection.
+                <br />
+                Are you sure to reset all domains with abnormal status ?
+              </p>
             </div>
+            <div class="center-control-line my-2 text-center">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2 active"
+              >
+                Confirm reset
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+                data-dismiss="#modal-resetAbnormalDomain"
+              >
+                Cancel reset
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <!-- build:js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <!-- endbuild -->
-</body>
-
+  </body>
 </html>

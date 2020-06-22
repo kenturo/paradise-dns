@@ -1,310 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
     <title>New page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- build:css -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <!-- endbuild -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0">
-                <div class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center">
-                    <div class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1">
-                        <button type="button" class="btn btn-dark col-6 ml-4 ">Logo</button>
-                        <button type="button" class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block " data-sidebar="#sidebar-menu">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                        <button class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col " type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                    </div>
+      <div class="row">
+        <nav
+          class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0"
+        >
+          <div
+            class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center"
+          >
+            <div
+              class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1"
+            >
+              <button type="button" class="btn btn-dark col-6 ml-4">
+                Logo
+              </button>
+              <button
+                type="button"
+                class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block"
+                data-sidebar="#sidebar-menu"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+              <button
+                class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-align-justify"></i>
+              </button>
+            </div>
+          </div>
 
+          <div
+            class="collapse navbar-collapse py-2 col-auto col-lg-12 col-xl-10"
+            id="navbarsExampleDefault"
+          >
+            <ul class="navbar-nav mr-auto ml-3">
+              <li class="nav-item navItem__link active">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-link"></span> Control Center</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-paperclip"></span> Tag Management</a
+                >
+              </li>
+
+              <li class="nav-item dropdown navItem__link">
+                <a
+                  class="nav-link dropdown-toggle navItem__link"
+                  href="http://example.com"
+                  id="dropdown01"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="fa fa-sitemap"></span> Site Management</a
+                >
+                <div
+                  class="dropdown-menu border-0 shadow-sm"
+                  aria-labelledby="dropdown01"
+                >
+                  <a class="dropdown-item" href="#">Server</a>
+                  <a class="dropdown-item" href="#">Site</a>
                 </div>
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-globe"></span> Domain Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-paperclip"></span> Route Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-file-text-o"></span> Disaster Tolerance
+                  Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-bar-chart-o"></span> QPS Record</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-user-o"></span> Account Management</a
+                >
+              </li>
+              <li class="nav-item navItem__link">
+                <a class="nav-link" href=".">
+                  <span class="fa fa-folder-o"></span> API Management</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+              <a class="text-secondary d-inline mt-2 ml-2" href="#">
+                <i class="fa fa-commenting-o"></i>
+              </a>
+              <button
+                type="button"
+                class="btn dropdown-toggle d-inline text-secondary bg-white"
+                id="dropdownMenuOffset"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                abc.xyz.uio
+              </button>
+              <div
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="dropdownMenuOffset"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-                <div class="collapse navbar-collapse py-2 col-auto col-lg-12 col-xl-10 " id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto ml-3 ">
-                        <li class="nav-item navItem__link active">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-link"></span> Control Center</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-paperclip"></span> Tag Management</a>
-                        </li>
+      <div class="row">
+        <div class="col-md-2 col-sm-2 border-right bg-white">
+          <nav
+            class="navbar-expand-md height__full-auto d-none d-xl-block"
+            id="sidebar-menu"
+          >
+            <div
+              class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar"
+            >
+              <button type="button" class="btn btn-sm btn-outline-success px-4">
+                Site
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success active"
+              >
+                Create Site
+              </button>
+            </div>
+            <div class="w-100">
+              <input
+                type="text"
+                class="form-control border-success form-control-sm"
+                id="inputsearch"
+                placeholder=""
+              />
+            </div>
+            <div class="d-flex mt-2 mb-4 d-flex justify-content-between">
+              <button type="button" class="btn btn-sm btn-outline-success px-4">
+                Site
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-success">
+                Create Site
+              </button>
+            </div>
+            <div class="row">
+              <ul class="nav flex-column d-flex w-100">
+                <li
+                  class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Dashboard
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                        <li class="nav-item dropdown navItem__link">
-                            <a class="nav-link dropdown-toggle navItem__link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="fa fa-sitemap"></span> Site Management</a>
-                            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdown01">
-                                <a class="dropdown-item" href="#">Server</a>
-                                <a class="dropdown-item" href="#">Site</a>
-                            </div>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-globe"></span> Domain Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-paperclip"></span> Route Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-file-text-o"></span> Disaster Tolerance Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-bar-chart-o"></span> QPS Record</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-user-o"></span> Account Management</a>
-                        </li>
-                        <li class="nav-item navItem__link">
-                            <a class="nav-link " href=".">
-                                <span class="fa fa-folder-o"></span> API Management</a>
-                        </li>
-                    </ul>
-                    <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Order
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                        <a class="text-secondary d-inline mt-2 ml-2" href="#">
-                            <i class="fa fa-commenting-o"></i>
-                        </a>
-                        <button type="button" class="btn dropdown-toggle d-inline text-secondary bg-white" id="dropdownMenuOffset" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Product
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
 
-                            abc.xyz.uio
-                        </button>
-                        <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                <li
+                  class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2"
+                >
+                  <a class="nav-link d-inline" href="#">
+                    Contact
+                  </a>
+                  <div class="mini-tool--support mt-0 mr-3 d-none float-right">
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </a>
+                    <a href="." class="text-secondary btn-small ml-2">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <div class="row">
-            <div class="col-md-2 col-sm-2 border-right bg-white">
-                <nav class=" navbar-expand-md   height__full-auto d-none d-xl-block " id="sidebar-menu">
-                    <div class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar">
-                        <button type="button" class="btn btn-sm btn-outline-success px-4 ">Site</button>
-                        <button type="button" class="btn btn-sm btn-outline-success active  ">Create Site</button>
-                    </div>
-                    <div class="w-100">
-                        <input type="text" class="form-control border-success form-control-sm" id="inputsearch" placeholder="">
-                    </div>
-                    <div class="d-flex mt-2 mb-4 d-flex justify-content-between ">
-                        <button type="button" class="btn btn-sm btn-outline-success px-4 ">Site</button>
-                        <button type="button" class="btn btn-sm btn-outline-success ">Create Site</button>
-                    </div>
-                    <div class="row">
-                        <ul class="nav flex-column d-flex w-100">
-                            <li class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Dashboard
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Order
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Product
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
-                                <a class="nav-link d-inline" href="#">
-                                    Contact
-                                </a>
-                                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-bar-chart-o "></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-pencil-square-o"></i>
-                                    </a>
-                                    <a href="." class="text-secondary btn-small ml-2">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <main class="col-lg-12 col-xl-10 px-4 pt-3">
+          <!-- button quick control access -->
+          <div
+            class="position-fixed quick--control-button d-inline flex-column"
+          >
+            <div
+              class="position-absolute border-0 shadow modal-extends"
+              id="add-modalGroup"
+              tabindex="-1"
+              role="dialog"
+            >
+              <div class="modal-dialog m-0" role="document">
+                <div class="modal-content p-3">
+                  <div class="modal-header border-0 p-1 pb-3">
+                    <h5 class="modal-title btn-sm">Enter the group name</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="#add-modalGroup"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body form-control border-0 pb-5">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="inlineFormInputName2"
+                      placeholder="Please input site name"
+                    />
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                  <div
+                    class="modal-footer d-flex justify-content-center border-0 pt-5"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-success text-weight-normal px-4 mb-3 btn-sm"
+                    >
+                      Add group
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <main class="col-lg-12 col-xl-10 px-4 pt-3">
+            <button
+              type="button"
+              class="float-right bg-white clearfix btn btn-sm border-0 shadow text-secondary invisible my-1"
+            >
+              Multi upload
+            </button>
 
-                <!-- button quick control access -->
-                <div class="position-fixed quick--control-button d-inline flex-column">
+            <button
+              type="button"
+              class="float-right bg-white clearfix btn btn-sm border-0 shadow text-secondary invisible mt-2 mb-3"
+              data-target="#add-modalGroup"
+            >
+              Add domain
+            </button>
 
-                    <div class="position-absolute  border-0  shadow modal-extends" id="add-modalGroup" tabindex="-1" role="dialog">
-                        <div class="modal-dialog m-0" role="document">
-                            <div class="modal-content p-3">
-                                <div class="modal-header border-0 p-1 pb-3">
-                                    <h5 class="modal-title btn-sm">Enter the group name</h5>
-                                    <button type="button" class="close" data-dismiss="#add-modalGroup" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body form-control border-0 pb-5">
-                                    <input type="text" class="form-control form-control-sm " id="inlineFormInputName2" placeholder="Please input site name">
-                                    <br>
-                                    <br>
-                                    <br>
-                                </div>
-                                <div class="modal-footer d-flex justify-content-center border-0 pt-5 ">
-                                    <button type="button" class="btn btn-success text-weight-normal px-4 mb-3 btn-sm">Add group</button>
-                                </div>
-                            </div>
-                        </div>
+            <button
+              type="button"
+              class="float-right clearfix btn btn-success btn-lg rounded-0 shadow-lg shadow-bg-green btn-trigger-action"
+            >
+              <span class="closeBtn">&times;</span>
+            </button>
+          </div>
+          <!-- end button quick control access -->
+
+          <!-- breadcrum -->
+          <nav aria-label="breadcrumb" class="">
+            <ol class="breadcrumb bg-transparent p-0 mb-2">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-secondary">Site Management</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Site</li>
+            </ol>
+          </nav>
+
+          <!-- end breadcrum -->
+
+          <div class="d-flex flex-column align-items-center">
+            <div class="col-auto text-center">
+              <h1 class="text-success">
+                <i class="fa fa-folder-open big-ico"></i>
+                <h6 class="btn-sm">Oops, there is no name yet, you can:</h6>
+              </h1>
+            </div>
+            <div class="col-auto text-center d-flex justify-content-center">
+              <div
+                class="border-0 shadow shown"
+                id="add-modalGroup1"
+                tabindex="-1"
+                role="dialog"
+              >
+                <div class="modal-dialog m-0" role="document">
+                  <div class="modal-content p-3">
+                    <div class="modal-header border-0 p-1 pb-3">
+                      <h5 class="modal-title btn-sm">Enter the group name</h5>
                     </div>
-
-
-                    <button type="button" class="float-right bg-white clearfix btn btn-sm border-0 shadow text-secondary invisible my-1">Multi upload</button>
-
-                    <button type="button" class="float-right bg-white clearfix btn btn-sm border-0 shadow text-secondary invisible mt-2 mb-3"
-                        data-target="#add-modalGroup">Add domain</button>
-
-                    <button type="button" class="float-right clearfix btn btn-success btn-lg rounded-0 shadow-lg shadow-bg-green btn-trigger-action">
-                        <span class="closeBtn">&times;</span>
-                    </button>
+                    <div class="modal-body form-control border-0 pb-5">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="inlineFormInputName2"
+                        placeholder="Please input site name"
+                      />
+                      <br />
+                      <br />
+                      <br />
+                    </div>
+                    <div
+                      class="modal-footer d-flex justify-content-center border-0 pt-5"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-success text-weight-normal px-4 mb-3 btn-sm"
+                      >
+                        Add group
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <!-- end button quick control access -->
+              </div>
+            </div>
+          </div>
 
+          <div class="py-3">&nbsp;</div>
 
-
-                <!-- breadcrum -->
-                <nav aria-label="breadcrumb" class="">
-                    <ol class="breadcrumb bg-transparent p-0 mb-2">
-                        <li class="breadcrumb-item">
-                            <a href="#" class="text-secondary">Site Management</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">Site</li>
-                    </ol>
-                </nav>
-
-                <!-- end breadcrum -->
-
-                <div class="d-flex flex-column align-items-center">
-                    <div class="col-auto text-center ">
-                        <h1 class="text-success">
-                            <i class="fa fa-folder-open big-ico"></i>
-                            <h6 class="btn-sm">Oops, there is no name yet, you can:</h6>
-                        </h1>
-                    </div>
-                    <div class="col-auto text-center d-flex justify-content-center">
-                        <div class="border-0  shadow shown " id="add-modalGroup1" tabindex="-1" role="dialog">
-                            <div class="modal-dialog m-0" role="document">
-                                <div class="modal-content p-3">
-                                    <div class="modal-header border-0 p-1 pb-3">
-                                        <h5 class="modal-title btn-sm">Enter the group name</h5>
-                                    </div>
-                                    <div class="modal-body form-control border-0 pb-5">
-                                        <input type="text" class="form-control form-control-sm " id="inlineFormInputName2" placeholder="Please input site name">
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-                                    <div class="modal-footer d-flex justify-content-center border-0 pt-5 ">
-                                        <button type="button" class="btn btn-success text-weight-normal px-4 mb-3 btn-sm">Add group</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="py-3">&nbsp;</div>
-
-                <footer class="d-flex justify-content-center border-top py-4">
-                    <span class="text-secondary my-0 py-4 btn-sm">Copyright DNS, All Rights Reserved ICP No. 188882 Public Security Equipment 88888</span>
-                </footer>
-            </main>
-        </div>
-
+          <footer class="d-flex justify-content-center border-top py-4">
+            <span class="text-secondary my-0 py-4 btn-sm"
+              >Copyright DNS, All Rights Reserved ICP No. 188882 Public Security
+              Equipment 88888</span
+            >
+          </footer>
+        </main>
+      </div>
     </div>
 
-
     <!-- Modal -->
-    <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="modalConfirmTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content px-3 py-2">
-                <div class="modal-body d-inline justify-content-between">
-                    <div class="btn-sm text-center my-2">
-                        Please ensure that all the contents of
-                        <span class="text-muted">Group name a</span> have been emptied, otherwise the deletion cannot be performed
-                    </div>
-                    <div class="center-control-line my-2 text-center">
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Confirm delete</button>
-                        <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 ">Cancel delete</button>
-                    </div>
-                </div>
-
+    <div
+      class="modal fade"
+      id="modalConfirm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalConfirmTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content px-3 py-2">
+          <div class="modal-body d-inline justify-content-between">
+            <div class="btn-sm text-center my-2">
+              Please ensure that all the contents of
+              <span class="text-muted">Group name a</span> have been emptied,
+              otherwise the deletion cannot be performed
             </div>
+            <div class="center-control-line my-2 text-center">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2 active"
+              >
+                Confirm delete
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success px-3 mx-2"
+              >
+                Cancel delete
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- build:js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <!-- endbuild -->
-</body>
-
+  </body>
 </html>
