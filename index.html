@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <title>New page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- build:css -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="d-flex flex-column flex-md-row navbar-expand-md border-bottom bg-white col-12 m-0 p-0">
+        <div class="col-auto col-md-3 col-lg-2 border-right d-flex align-items-center">
+          <div class="navbar-brand text-center row justify-content-between w-100 py-4 py-md-1">
+            <button type="button" class="btn btn-dark col-6 ml-4 ">Logo</button>
+            <button type="button" class="btn text-secondary border-0 bg-white col-3 toggle-sidebar d-none d-md-block " data-sidebar="#sidebar-left">
+              <i class="fa fa-align-justify"></i>
+            </button>
+            <button class="navbar-toggler pt-3 pb-3 text-secondary border-0 bg-white col " type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+              aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-align-justify"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="collapse navbar-collapse py-2 col-auto col-sm-9 col-lg-10 col-xl-10 " id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto ml-3 table-responsive">
+            <li class="nav-item navItem__link active">
+              <a class="nav-link " href="/control-centre/index.html">
+                <span class="fa fa-link"></span> Control Center</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href="/tag-management/index.html">
+                <span class="fa fa-paperclip"></span> Tag Management</a>
+            </li>
+
+            <li class="nav-item dropdown navItem__link">
+              <a class="nav-link dropdown-toggle navItem__link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="fa fa-sitemap"></span> Site Management</a>
+              <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Server</a>
+                <a class="dropdown-item" href="#">Site</a>
+              </div>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-globe"></span> Domain Management</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-paperclip"></span> Route Management</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-file-text-o"></span> Disaster Tolerance Record</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-bar-chart-o"></span> QPS Record</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-user-o"></span> Account Management</a>
+            </li>
+            <li class="nav-item navItem__link">
+              <a class="nav-link " href=".">
+                <span class="fa fa-folder-o"></span> API Management</a>
+            </li>
+          </ul>
+          <div class="dropdown mr-1 my-2 my-lg-0 d-flex navItem__link">
+
+            <a class="text-secondary d-inline mt-2 ml-2" href="javascript:;" id="toggle-noti--panel" data-target="#notification-wrapper">
+              <i class="fa fa-commenting-o"></i>
+            </a>
+            <button type="button" class="btn dropdown-toggle d-inline text-secondary bg-white" id="dropdownMenuOffset" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+
+              abc.xyz.uio
+            </button>
+            <div class="dropdown-menu border-0 shadow-sm " aria-labelledby="dropdownMenuOffset">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row position-relative toggle-vertical">
+      <div class="col-md-2 col-sm-2 border-right bg-white " id="sidebar-left">
+        <nav class=" navbar-expand-md   height__full-auto d-none d-xl-block " id="sidebar-menu">
+          <div class="d-flex mt-4 mb-2 d-flex justify-content-between box__tabControl-sidebar">
+            <button type="button" class="btn btn-sm btn-outline-success px-4 ">Server</button>
+            <button type="button" class="btn btn-sm btn-outline-success active  " data-target="#modal-newServer" data-toggle="modal">New Server</button>
+          </div>
+
+          <div class="row">
+            <ul class="nav flex-column d-flex w-100">
+              <li class="nav-item navItem__link active d-inline w-100 has-bg pt-2 pb-2">
+                <a class="nav-link d-inline" href="#">
+                  Dashboard
+                </a>
+                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-bar-chart-o "></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-pencil-square-o"></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-trash-o"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
+                <a class="nav-link d-inline" href="#">
+                  Order
+                </a>
+                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-bar-chart-o "></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-pencil-square-o"></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-trash-o"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
+                <a class="nav-link d-inline" href="#">
+                  Product
+                </a>
+                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-bar-chart-o "></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-pencil-square-o"></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-trash-o"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav-item navItem__link d-inline w-100 has-bg pt-2 pb-2">
+                <a class="nav-link d-inline" href="#">
+                  Contact
+                </a>
+                <div class="mini-tool--support mt-0 mr-3 d-none float-right ">
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-bar-chart-o "></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-pencil-square-o"></i>
+                  </a>
+                  <a href="." class="text-secondary btn-small ml-2">
+                    <i class="fa fa-trash-o"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <main class="col-lg-12 col-xl-10 px-4 pt-3">
+
+        <div class="row">
+          <div class="card-deck">
+            <!-- table -->
+            <div class="bg-white border p-4 card rounded ">
+              <div class="row justify-content-between">
+                <h6 class="font-weight-bold btn-sm col">Server Map</h6>
+                <div class="form-group my-2 px-1 col-auto">
+                  <select class="form-control form-control-sm " id="exampleFormControlSelect1a" aria-placeholder="Please choose record type">
+                    <option>Last 30 days</option>
+                    <option>Statistics</option>
+                    <option>Analyze</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div id="chart-legend" class="col"></div>
+                <div class="wrapper col">
+                  <canvas id="pieChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- end table -->
+
+
+            <!-- table -->
+            <div class="bg-white border p-4 card rounded ">
+              <div class="row justify-content-between">
+                <h6 class="font-weight-bold btn-sm col">Regional distribution map and list
+                  <br/> (listed by number of visits in the list)</h6>
+                <div class="form-group my-2 px-1 col-auto">
+                  <select class="form-control form-control-sm " id="exampleFormControlSelect1a" aria-placeholder="Please choose record type">
+                    <option>Last 30 days</option>
+                    <option>Statistics</option>
+                    <option>Analyze</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row my-5">
+                <div class="wrapper col">
+                  <canvas id="pieChart_2"></canvas>
+                </div>
+              </div>
+
+              <!-- collapse -->
+              <div class="row my-5">
+                <div class="accordion col my-4" id="accordionExample">
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingOne">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        LAN, traffic: 7
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body btn-sm  p-0">
+
+                        <ul class="list-group ">
+                          <li class="list-group-item pl-5 py-2 btn-sm ">Cras justo odio</li>
+                          <li class="list-group-item pl-5 py-2 btn-sm ">Dapibus ac facilisis in</li>
+                          <li class="list-group-item pl-5 py-2 btn-sm ">Morbi leo risus</li>
+                          <li class="list-group-item pl-5 py-2 btn-sm ">Porta ac consectetur ac</li>
+                          <li class="list-group-item pl-5 py-2 btn-sm ">Vestibulum at eros</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingTwo">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        China, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit,
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTh"
+                        aria-expanded="true" aria-controls="collapseTh">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseTh" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#solema" aria-expanded="true"
+                        aria-controls="solema">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="solema" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end collapse -->
+            </div>
+            <!-- end table -->
+
+            <!-- table -->
+            <div class="bg-white border p-4 card rounded ">
+              <div class="row justify-content-between">
+                <h6 class="font-weight-bold btn-sm col">Operator map
+                  <br/> &nbsp;</h6>
+                <div class="form-group my-2 px-1 col-auto">
+                  <select class="form-control form-control-sm " id="exampleFormControlSelect1a" aria-placeholder="Please choose record type">
+                    <option>Last 30 days</option>
+                    <option>Statistics</option>
+                    <option>Analyze</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row my-5">
+                <div class="wrapper col">
+                  <canvas id="pieChart_3"></canvas>
+                </div>
+              </div>
+
+              <!-- collapse -->
+              <div class="row my-5">
+                <div class="accordion col my-4" id="accordionExample">
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingOne">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        LAN, traffic: 7
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body btn-sm  p-0">
+
+                        <div class="accordion col my-0  p-0" id="accordionExample_1">
+                          <div class="card mx-0">
+                            <div class="card-header bg-white  py-1 px-1 pl-5" id="headingOne">
+                              <button class="btn btn-sm bg-transparent  " type="button" data-toggle="collapse" data-target="#collapseOne_11" aria-expanded="false"
+                                aria-controls="collapseOne_11">
+                                LAN, traffic: 7
+                              </button>
+                            </div>
+
+                            <div id="collapseOne_11" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample_1">
+                              <div class="card-body btn-sm">
+                                Anim pariatur cliche reprehenderit,
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mx-0">
+                            <div class="card-header bg-white  py-1 px-1 pl-5" id="headingTwo">
+                              <button class="btn btn-sm bg-transparent  " type="button" data-toggle="collapse" data-target="#collapseTwo_333" aria-expanded="false"
+                                aria-controls="collapseTwo_333">
+                                China, traffic: 17
+                              </button>
+                            </div>
+                            <div id="collapseTwo_333" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample_1">
+                              <div class="card-body btn-sm">
+                                Anim pariatur cliche reprehenderit,
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card mx-0">
+                            <div class="card-header bg-white  py-1 px-1 pl-5" id="headingThree">
+                              <button class="btn btn-sm bg-transparent  " type="button" data-toggle="collapse" data-target="#collapseThree_332" aria-expanded="false"
+                                aria-controls="collapseThree_332">
+                                US, traffic: 17
+                              </button>
+                            </div>
+                            <div id="collapseThree_332" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample_1">
+                              <div class="card-body btn-sm">
+                                Anim pariatur cliche reprehenderit,
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingTwo">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        China, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit,
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTh"
+                        aria-expanded="true" aria-controls="collapseTh">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="collapseTh" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mx-1">
+                    <div class="card-header py-1" id="headingThree">
+                      <button class="btn btn-sm bg-transparent font-weight-bold" type="button" data-toggle="collapse" data-target="#solema" aria-expanded="true"
+                        aria-controls="solema">
+                        US, traffic: 17
+                      </button>
+                    </div>
+                    <div id="solema" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body btn-sm">
+                        Anim pariatur cliche reprehenderit, probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end collapse -->
+            </div>
+            <!-- end table -->
+          </div>
+        </div>
+
+        <div class="py-3 ">&nbsp;</div>
+
+        <footer class="d-flex justify-content-center border-top py-4 ">
+          <span class="text-secondary my-0 py-4 btn-sm ">Copyright DNS, All Rights Reserved ICP No. 188882 Public Security Equipment 88888</span>
+        </footer>
+      </main>
+
+      <div id="overlay-content" class="position-absolute  w-100 h-100 ">&nbsp;</div>
+      <div id="notification-wrapper" class="notification-wrapper   position-absolute h-100 wpx-470 bg-white border  ">
+        <div id="noti-config-panel" class="noti-config-panel position-absolute bg-white w-100 h-100 ">
+          <div class="noti-header border-bottom px-3 py-2">
+            <a href="javascript:;" class="font-weight-bold text-dark close-config-noti">
+              <i class="fa fa-chevron-left mr-3"></i>
+              Notification Management
+            </a>
+          </div>
+          <div class="config-body">
+            <div class="row align-items-center px-3">
+              <div class="col-12 box-content mx-auto card-body px-2 text-center">
+                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                <i class="fa fa-slack big-ico text-success mb-2"></i>
+                <h5>Slack Notification Setting</h5>
+                <!-- </a> -->
+              </div>
+              <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                <div class="float-left form-group form-check  mb-0 pt-2">
+                  <h6 class="mb-0">Slack Notification On/Off</h6>
+                </div>
+                <div class=" text-right float-right ">
+                  <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
+                </div>
+              </div>
+              <div class="clearfix col-12   px-2 pt-3 pb-0">
+                <div class="float-left form-group form-check  mb-0">
+                  <h6 class="mb-0 ">Slack Incoming Interface</h6>
+                </div>
+                <div class="clearfix"></div>
+                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
+              </div>
+              <div class="col-12">
+                <hr>
+              </div>
+              <div class="col-12 box-content mx-auto card-body px-2 text-center">
+                <!-- <a href="javascript:;" class="text-dark flex-column d-flex" data-toggle="modal" data-target="#modal-addSubAccount"> -->
+                <i class="fa fa-bell big-ico text-success mb-2"></i>
+                <h5>Push Notification Setting</h5>
+                <!-- </a> -->
+              </div>
+              <div class="clearfix col-12 border-top border-bottom px-2 py-1">
+                <div class="float-left form-group form-check  mb-0 pt-2">
+                  <h6 class="mb-0">Push Notification On/Off</h6>
+                </div>
+                <div class=" text-right float-right ">
+                  <i class="fa fa-toggle-on text-success ico-2em" style=""></i>
+                </div>
+              </div>
+              <div class="clearfix col-12   border-bottom  px-2 pt-3 pb-0">
+                <div class="float-left form-group form-check  mb-0">
+                  <h6 class="mb-0 ">Push Incoming Interface</h6>
+                </div>
+                <div class="clearfix"></div>
+                <small class="text-muted ml-4" style="word-wrap: break-word;">https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</small>
+              </div>
+              <div class="center-control-line align-self-center col-12 mt-4 justify-content-center d-flex">
+                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-5 mx-3 ">Save</button>
+
+                <button type="button" class="btn col-sm-auto btn-outline-success mb-2 btn-sm  px-3 mx-3 close-config-noti">Cancel and Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noti-header border-bottom px-3 py-2">
+          <div class="float-left form-group form-check  mb-0">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label font-weight-bold" for="exampleCheck1">Notification</label>
+          </div>
+          <div class=" text-right float-right ">
+            <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="more-top-noti" data-target="#nav-tooltip-noti">
+              <i class="fa fa-ellipsis-h"></i>
+            </a>
+            <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="config-noti" data-target="#noti-config-panel">
+              <i class="fa fa-cog"></i>
+            </a>
+            <a href="javascript:;" class=" text-secondary ml-1 d-inline-block" id="close-more-top-noti">&times;</a>
+          </div>
+          <div class="clearfix"></div>
+          <div id="nav-tooltip-noti" class="nav-tooltip-noti p-2 position-absolute bg-white shadow border">
+            <ul class="nav d-block">
+              <li>
+                <a href="javascript:;" class="text-secondary">
+                  <small>Set as Read</small>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-secondary">
+                  <small>Clear All</small>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;" class="text-secondary">
+                  <small>Set All as Read</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="noti-body ">
+          <ul class="nav noti-lineItem ">
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Domain</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span">
+                    <small>
+                      Your domain abc.com NS absnormal
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    Please check
+                    <a href="javascript:;" class="text-success">Check it</a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Domain</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com NS absnormal
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    Please check
+                    <a href="javascript:;" class="text-success">Check it</a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Server</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com has expired,
+                      <a href="javascript:;" class="text-success">Renewal</a>
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    expired time is
+                    <a href="javascript:;" class="text-secondary">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Domain</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com NS absnormal
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    Please check
+                    <a href="javascript:;" class="text-success">Check it</a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Server</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com has expired,
+                      <a href="javascript:;" class="text-success">Renewal</a>
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    expired time is
+                    <a href="javascript:;" class="text-secondary">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Domain</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com NS absnormal
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    Please check
+                    <a href="javascript:;" class="text-success">Check it</a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Server</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com has expired,
+                      <a href="javascript:;" class="text-success">Renewal</a>
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    expired time is
+                    <a href="javascript:;" class="text-secondary">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Domain</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com NS absnormal
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    Please check
+                    <a href="javascript:;" class="text-success">Check it</a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Server</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com has expired,
+                      <a href="javascript:;" class="text-success">Renewal</a>
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    expired time is
+                    <a href="javascript:;" class="text-secondary">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li class="w-100 border-bottom px-3 py-2">
+              <div class="line-f clearfix">
+                <div class="float-left form-group form-check  mb-0">
+                  <input type="checkbox" class="form-check-input" id="akjdhakhd">
+                  <label class="form-check-label " for="akjdhakhd">Server</label>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">2018-09-09 12:32:32</small>
+                </div>
+              </div>
+              <div class="line-f">
+                <div class="float-left form-group form-check  mb-0">
+                  <span class="text-secondary bullet-span off">
+                    <small>
+                      Your domain abc.com has expired,
+                      <a href="javascript:;" class="text-success">Renewal</a>
+                    </small>
+                  </span>
+                </div>
+                <div class=" text-right float-right ">
+                  <small class="text-secondary">
+                    expired time is
+                    <a href="javascript:;" class="text-secondary">
+                      <i class="fa fa-trash-o"></i>
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- pagination -->
+          <div class=" row px-2">
+            <div class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3">
+            </div>
+            <div class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex">
+
+            </div>
+            <div class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex ">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm mt-2 pt-1">
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">2</a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- end pagination-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- modalcheck Using List -->
+  <div class="modal fade bd-example-modal-lg" id="modal-viewUsingList" tabindex="-1" role="dialog" aria-labelledby="modal-viewUsingListTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content ">
+        <div class="modal-header border-0">
+          <h5 class="modal-title btn-sm font-weight-bold">IP: 12.12.12.12 using list</h5>
+          <button type="button" class="close" data-dismiss="#modal-viewUsingList" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-inline justify-content-between ">
+          <div class="table-responsive">
+            <table class="table table-bordered table-sm table__custom-style">
+              <thead class="bg-light">
+                <tr>
+                  <th class="pl-3 py-2" scope="col">Server name</th>
+                  <th class="pl-3 py-2" scope="col">Site name</th>
+                  <th class="pl-3 py-2" scope="col">Group name</th>
+                  <th class="pl-3 py-2" scope="col">Host record</th>
+                  <th class="pl-3 py-2" scope="col">Record type</th>
+                  <th class="pl-3 py-2" scope="col">Resolve type</th>
+                  <th class="pl-3 py-2" scope="col">Operate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pl-3 py-2 " scope="row">
+                    Max 6 letters
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    site name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    group name 1
+                  </td>
+                  <td class="pl-3 py-2 ">
+                    abc.domain.net
+                  </td>
+                  <td class="pl-3 py-2  ">CNAME</td>
+                  <td class="pl-3 py-2 ">Multi-line analyze</td>
+                  <td class="d-flex justify-content-around">
+                    <a class="text-success text-weight-normal" data-toggle="modal" data-target="#modal-nsCheckResults" href="javascript://">
+                      View Analyze
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- pagination -->
+          <div class=" row ">
+            <div class="page-size align-self-center col-12 col-sm-auto col-xl-4 mb-auto mb-sm-3">
+            </div>
+            <div class="center-control-line align-self-center col-12 col-sm-auto col-xl-4 justify-content-center d-flex">
+            </div>
+            <div class="paging col-12 col-sm-auto col-xl-4 justify-content-end d-flex">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm mt-2 pt-1">
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link text-secondary" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- end pagination-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modalmove group -->
+  <div class="modal fade" id="modal-switchIP" tabindex="-1" role="dialog" aria-labelledby="modal-switchIPTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content ">
+        <div class="modal-header border-0">
+          <!-- <h5 class="modal-title btn-sm font-weight-bold">NS Check Result</h5> -->
+        </div>
+        <div class="modal-body d-inline justify-content-between ">
+          <div class="">
+            <form class="form-inline d-flex justify-content-around pb-5">
+              <select class="form-control form-control-sm col-5 " id="exampleFormControlSelect1s">
+                <option>Please choose server </option>
+                <option>Statistics</option>
+                <option>Analyze</option>
+              </select>
+              <select class="form-control form-control-sm col-5" id="exampleFormControlSelect1a">
+                <option>Please choose IP switch</option>
+                <option>Statistics</option>
+                <option>Analyze</option>
+              </select>
+            </form>
+          </div>
+          <div class="center-control-line my-2 text-center mt-5">
+            <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active ">Switch</button>
+            <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 " data-dismiss="#modal-switchIP">Cancel </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modalaleady renewal -->
+  <div class="modal fade" id="modal-alreadyRenewal" tabindex="-1" role="dialog" aria-labelledby="modal-alreadyRenewalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content px-3 py-2">
+        <div class="modal-body d-inline justify-content-between">
+          <div class="btn-sm text-center my-2 text-danger">
+            <p>
+              Server 1 has expired, for normal using.
+              <br> Please go to service website to complete a renewal
+            </p>
+          </div>
+          <div class="center-control-line my-2 text-center">
+            <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2  " data-dismiss="#modal-alreadyRenewal">Renewal Later</button>
+            <button type="button" class="btn btn-sm btn-outline-success px-3 mx-2 active">Already Renewal</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modalEdit Server Info -->
+  <div class="modal fade" id="modal-editServerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editServerInfoTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content px-3 py-2">
+        <div class="modal-header border-0 pb-0">
+          <h6 class="modal-title btn-sm font-weight-bold">Edit server information</h6>
+          <button type="button" class="close" data-dismiss="#modal-editServerInfo" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body form-control border-0 py-2 ">
+          <!-- box search -->
+          <form class="form-row my-3 mb-3 w-100">
+            <input type="text" class="form-control form-control-sm col mb-2 mr-sm-1 " placeholder="367">
+            <select class="form-control  mb-2 mr-sm-1 col ">
+              <option>CNY</option>
+              <option>Add new</option>
+            </select>
+
+            <div class="input-group mb-2 col ">
+              <!-- <input type="text" class="form-control form-control-sm  col mb-2" id="basic-addon2" placeholder="1"> -->
+              <input type="text" class="form-control" placeholder="1" aria-label="1" aria-describedby="basic-addon2">
+              <div class="input-group-append ">
+                <span class="input-group-text " id="basic-addon2">
+                  <small>month</small>
+                </span>
+              </div>
+            </div>
+
+            <input type="text" name="daterange" class="form-control col  form-control-sm mb-2 mr-sm-1 text-center" value="01/01/2018 - 01/15/2018"
+            />
+
+            <div class="w-100 my-2 p-1 mr-1 pl-3 border border-muted rounded">
+              <button type="button" class="btn btn-outline-secondary btn-sm py-0">blog
+                <span aria-hidden="true" class="ml-3">&times;</span>
+              </button>
+
+              <button type="button" class="btn btn-outline-secondary btn-sm py-0">asdhkjas
+                <span aria-hidden="true" class="ml-3">&times;</span>
+              </button>
+              <small class="text-muted ml-2">
+                add tag
+              </small>
+            </div>
+
+            <textarea class="form-control col mr-1" rows="6">123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;123.12.13.31&#13;&#10;</textarea>
+
+            <textarea class="form-control col mr-1" rows="6">note note note
+                            </textarea>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center border-0 ">
+          <button type="button" class="btn btn-success text-weight-normal px-4 mb-3 btn-sm">Confirm</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- new Server  -->
+  <div class="modal fade" id="modal-newServer" tabindex="-1" role="dialog" aria-labelledby="modal-newServerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content px-3 py-2">
+        <div class="modal-header border-0 pb-0">
+          <h6 class="modal-title btn-sm font-weight-bold">Please fill in the following server informationto better experience DNS website</h6>
+          <button type="button" class="close" data-dismiss="#modal-newServer" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body form-control border-0 py-2 ">
+          <!-- box search -->
+          <form class="form-row my-3 mb-3 w-100">
+            <input type="text" class="form-control form-control-sm col mb-2 mr-sm-1 " placeholder="input server fee">
+            <select class="form-control  mb-2 mr-sm-1 col ">
+              <option>Currency</option>
+            </select>
+
+            <div class="input-group mb-2 col ">
+              <input type="text" class="form-control" placeholder="Payment cycle" aria-label="1" aria-describedby="basic-addon2">
+              <div class="input-group-append ">
+                <span class="input-group-text " id="basic-addon2">
+                  <small>month</small>
+                </span>
+              </div>
+            </div>
+
+            <input type="text" name="daterange" class="form-control col  form-control-sm mb-2 mr-sm-1 text-center" placeholder="Choose expired date"
+            />
+
+            <div class="w-100 my-2 p-1 mr-1 pl-3 border border-muted rounded">
+
+              <small class="text-muted ml-2">
+                Please add tag
+              </small>
+            </div>
+
+            <textarea class="form-control col mr-1" rows="6" placeholder="Please input IP, each IP per line in format"></textarea>
+
+            <textarea class="form-control col mr-1" rows="6" placeholder="input remark"></textarea>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center border-0 ">
+          <button type="button" class="btn btn-success text-weight-normal px-4 mb-3 btn-sm">Confirm</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- build:js -->
+  <script type="text/template" id="tlp_addLineItemIP">
+        <div class="line-item-inputIp mb-2">
+                <form class="form-row">
+                    <input type="text" class="form-control form-control-sm text-center col-3" value="10.12.12.12" role="button" rel="popover"
+                        data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Already used in server 1">
+                    <input type="text" class="form-control form-control-sm mx-2 col" placeholder="Input your note">
+                    <button class="btn btn-sm bg-white border col-1 remove-LineIP">
+                        <i class="fa fa-trash-o"></i>
+                    </button>
+                </form>
+            </div>
+    </script>
+  <script type="text/javascript " src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <script src="../assets/js/main.js "></script>
+  <!-- endbuild -->
+</body>
+
+</html>
